@@ -12,5 +12,6 @@ people = input("How many people to split the bill? ")
 tip_float = (int(tip)/100) + 1
 pay_per_person = (float(total_bill) / int(people)) * tip_float
 limited_pay_per_person = round(pay_per_person, 2)
+limited_pay_per_person = "{:.2f}".format(pay_per_person)
 
 print(f"Each person should pay: ${limited_pay_per_person}")
